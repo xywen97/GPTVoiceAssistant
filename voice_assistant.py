@@ -206,8 +206,8 @@ def recognize():
     global wsParam
     # input your own params
     # you can get these params in xfyun website/科大讯飞开放平台/语音听写
-    wsParam = Ws_Param(APPID='21f42489', APISecret='ZGFmYjIyNGE3MGU1NjBmMDc2M2ZjMjNm',
-                       APIKey='4178501a039545adf59fca1e20642256',
+    wsParam = Ws_Param(APPID='xxx', APISecret='xxx',
+                       APIKey='xxx',
                        AudioFile=r'tmp.pcm')
     websocket.enableTrace(False)
     wsUrl = wsParam.create_url()
@@ -216,7 +216,7 @@ def recognize():
     ws.run_forever(sslopt={"cert_reqs": ssl.CERT_NONE})
 
 def gpt(messages):
-    openai.api_key = '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'
+    openai.api_key = 'sk-xxxxxxxxxxxxxxxxxxxxxxxx'
     global counter
     # global messages
     # messages.append({"role": "user", "content": message})
