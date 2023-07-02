@@ -58,6 +58,17 @@
    python voice_assistant.py
    ```
 
+   你也可以在 Jupyter Notebook 中使用。但请注意以下事项：
+   1. 在 Notebook 中使用 `engine.save_to_file(reply, outfile)` 存在一些错误；
+   2. 当你中断 Notebook 时，上一轮使用的文件仍然处于占用状态；
+   3. 因此，你无法成功地在其中写入新的语音，并且在使用之前无法删除它（提示权限被拒绝）。
+
+   ```
+   demo.ipynb
+   ```
+
+请注意，上述内容已经被翻译成中文。
+
 ## 用法
 
 1. 语音助手将开始侦听音频输入。

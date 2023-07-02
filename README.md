@@ -60,6 +60,14 @@ This project demonstrates a voice assistant that uses speech recognition to conv
    python voice_assistant.py
    ```
 
+   You can also use in the Jupyter Notebook. But note that:
+   1. There is some bugs when you use `engine.save_to_file(reply, outfile)` in the Notebook;
+   2. When you interupt the notebook, the file it used in the last round is still in use/busy;
+   3. So, you cannot successfully write new voice in it, and cannot delete it before using (alert permission denied)
+   ```
+   demo.ipynb
+   ```
+
 ## Usage
 
 1. The voice assistant will start listening for audio input.
